@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <h1>Library</h1>
+</head>
+
+<body>
+    <button type="button" onclick="showForm()">Click Me To Add A Book</button>
+    <form id="form" style="display: none;">
+        <label for="bname">Title:</label><br>
+        <input type="text" id="title"><br>
+        <label for="aname">Author:</label><br>
+        <input type="text" id="author"><br>
+        <label for="aname">Number of pages:</label><br>
+        <input type="text" id="nbrpages"><br>
+        <label for="aname">Read:</label><br>
+        <input type="text" id="read"><br>
+    </form> 
+    <button type="button" onclick="addBookToLibrary()" style="display: none;" id="submit">Submit</button>
+    <div id="books">
+    </div>
+</body>
+
+</html>
+<script src="main.js"></script>
